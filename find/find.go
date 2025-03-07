@@ -19,7 +19,7 @@ import (
 	"github.com/ulikunitz/xz"
 )
 
-// FileInfo is a type that represents information about a file or directory.
+// FileInfo is a type that represents information about a file or directory. 
 type FileInfo struct {
 	Name      string
 	Path      string
