@@ -274,7 +274,7 @@ func listFilesInRar(fullpath string) ([]FileInfo, error) {
 	var files []FileInfo
 	for {
 		h, err := r.Next()
-		if err == io.EOF {
+		if err == io.EOF || h == nil {
 			break
 		}
 
